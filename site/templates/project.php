@@ -19,6 +19,7 @@
     <div class="workHero">
       <p id="workTitle"><?php echo $page->title() ?></p>
       <a href="<?php echo $page->videolink() ?>" class="fancybox-media playButton" title="<?php echo $page->title() ?>">Play</a>
+      <img src="../assets/images/workHero.jpg" id="projectHero" />
     </div>
     
     <section id="projectDetails" class="clearfix">

@@ -189,30 +189,39 @@ a.bigButton:hover, .button:hover {
   overflow: auto; }
 
 .workHero, #weddingsHero {
+  position: relative;
   width: 100%;
   height: 450px;
-  background-size: cover;
-  background-position: center;
-  overflow: auto; }
-  .workHero .playButton, #weddingsHero .playButton {
-    display: block;
-    width: 85px;
-    height: 85px;
-    margin: 40px auto 0 auto;
-    text-indent: 100%;
-    overflow: hidden;
-    background: url(../images/sprite_sheet.png);
-    background-position: -240px -140px;
-    opacity: 1;
-    -webkit-transition: all 100ms 0s ease;
-    -moz-transition: all 100ms 0s ease;
-    -o-transition: all 100ms 0s ease;
-    transition: all 100ms 0s ease; }
-  .workHero .playButton:hover, #weddingsHero .playButton:hover {
-    opacity: .8; }
+  overflow: hidden; }
 
-.workHero {
-  background-image: url(../images/workHero.jpg); }
+#weddingsHero {
+  background-size: cover;
+  background-position: center; }
+
+.playButton {
+  display: block;
+  width: 85px;
+  height: 85px;
+  margin: 40px auto 0 auto;
+  text-indent: 100%;
+  overflow: hidden;
+  background: url(../images/sprite_sheet.png);
+  background-position: -240px -140px;
+  opacity: 1;
+  -webkit-transition: all 100ms 0s ease;
+  -moz-transition: all 100ms 0s ease;
+  -o-transition: all 100ms 0s ease;
+  transition: all 100ms 0s ease; }
+
+.playButton:hover {
+  opacity: .8; }
+
+#projectHero {
+  position: absolute;
+  width: 100%;
+  min-width: 960px;
+  top: 0;
+  z-index: -1; }
 
 #weddingsHero {
   background-image: url(../images/weddingsHero.jpg); }
